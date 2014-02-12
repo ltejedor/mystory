@@ -1,0 +1,21 @@
+<h2>New Story</h2>
+<%= form_for(@story) do |f| %>
+
+  <div class="field">
+    <%= f.label :title, "What is the name of your story?" %><br>
+    <%= f.text_field :title %>
+  </div>
+  <div class="field">
+    <%= f.label :name, "And what's your name?" %><br>
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :town, "Where are you going?" %><br>
+    <%= f.text_field :town %>
+  </div><br>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+
+<% end %>
