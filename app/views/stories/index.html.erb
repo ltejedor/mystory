@@ -1,1 +1,7 @@
 <%= link_to "Create your story", new_story_path %>
+<ul>
+<% @stories.each do |s| %>
+	<li><%= link_to s.title, s %></li>
+	<p>by <%= s.name %></p>
+<% end %>
+</ul>
