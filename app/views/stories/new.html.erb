@@ -12,7 +12,14 @@
   <div class="field">
     <%= f.label :town, "Where are you going?" %><br>
     <%= f.text_field :town %>
-  </div><br>
+  </div>
+  <div class="field">
+    <%= f.radio_button :image, 'image1.png' %> <%= f.label :image, "image1" %><br />
+    <%= f.radio_button :image, 'image2.png' %> <%= f.label :image, "image2" %><br />
+    <%= f.radio_button :image, 'image3.png' %> <%= f.label :image, "image3" %><br />
+  </div>
+
+  <br>
 
   <div class="actions">
     <%= f.submit %>
