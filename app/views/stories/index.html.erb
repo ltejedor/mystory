@@ -1,7 +1,14 @@
+<div class="about">
+</div>
+
 <%= link_to "Create your story", new_story_path %>
+
+<div class="list">
 <ul>
 <% @stories.each do |s| %>
 	<li><%= link_to s.title, s %></li>
 	<p>by <%= s.name %></p>
 <% end %>
 </ul>
+
+</div>
